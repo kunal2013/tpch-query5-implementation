@@ -39,3 +39,11 @@ step1 : mkdir build
 step2 : cd build
 step3 : cmake .. -G "MinGW Makefiles"   # for window like system 
 step4 : mingw32-make
+
+## ⚠️ Note on Data Processing
+
+Due to system memory constraints, I limited the data processing to **10 crore (100 million) lines** from the TPC-H data tables. Without this limit:
+
+- System experienced frequent **hanging and crashes**
+- **Stack overflow errors** occurred during full dataset processing  
+- Memory usage exceeded available system resources
