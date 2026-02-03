@@ -9,7 +9,7 @@
 **Speedup:** 2.08x with 4 threads
 
 ## 🖼️ Screenshot
-![Performance Output](screenshots/performance.png)
+![Performance Output](screenshot/performance.png)
 
 ## 📂 Project Structure
 
