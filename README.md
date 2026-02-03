@@ -19,19 +19,26 @@
 # Multi-thread (4 threads)
 .\tpch_query5.exe --r_name ASIA --start_date 1994-01-01 --end_date 1995-01-01 --threads 4 --table_path E:\tpc_db\db_tbl --result_path results/four.txt
 
-Project Structure
+---
 
-text
+## 📂 Project Structure
+
+```text
 tpch-query5/
-├── src/           # Source code
-├── include/       # Header files
-├── results/       # Output files
-│   ├── single.txt
-│   └── four.txt
-├── screenshots/   # Performance screenshots
-│   └── performance.png
-├── CMakeLists.txt # Build configuration
-└── README.md      # This documentation
+├── src/                    # Source code
+│   ├── main.cpp            # Entry point with argument parsing & timing
+│   └── query5.cpp          # Core logic: parsing, data loading, query execution
+├── include/                # Header files
+│   └── query5.hpp
+├── results/                # Output files from runs
+│   ├── single.txt          # Single-thread results
+│   └── four.txt            # 4-thread results
+├── screenshots/            # Performance screenshots
+│   ├── single_thread.png
+│   ├── four_threads.png
+│   └── results_comparison.png
+├── CMakeLists.txt          # Build configuration
+└── README.md               # This file
 
 Build Instructions
 
